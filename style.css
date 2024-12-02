@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+#navbar {
+  background-color: rgb(188, 194, 194);
+  height: 10vh;
+  width: 100vw;
+  border: 1px solid gray;
+}
+#main {
+  display: flex;
+  height: 80vh;
+}
+#left {
+  background-color: rgb(201, 219, 219);
+  width: 10vw;
+  border: 1px solid gray;
+}
+#centre {
+  background-color: rgb(196, 187, 175);
+  width: 80vw;
+  border: 1px solid gray;
+}
+#right {
+  background-color: rgb(191, 186, 197);
+  width: 10vw;
+  border: 1px solid gray;
+}
+#footer {
+  height: 10vh;
+  background-color: rgb(213, 196, 196);
+  width: 100vw;
+  border: 1px solid gray;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  #main {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    height: 80vh;
+  }
+  #left {
+    background-color: rgb(201, 219, 219);
+    width: 50%;
+    border: 1px solid gray;
+    height: 45vh;
+    order: 1;
+  }
+  #right {
+    background-color: rgb(191, 186, 197);
+    width: 49.6%;
+    border: 1px solid gray;
+    height: 45vh;
+    order: 2;
+  }
+  #centre {
+    background-color: rgb(196, 187, 175);
+    width: 100vw;
+    border: 1px solid gray;
+    height: 35vh;
+    order: 3;
+  }
+}
+@media screen and (max-width: 360px) and (min-width: 100px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+  #left {
+    background-color: rgb(201, 219, 219);
+    width: 100%;
+    border: 1px solid gray;
+    height: 20vh;
+  }
+  #right {
+    background-color: rgb(191, 186, 197);
+    width: 100%;
+    border: 1px solid gray;
+    height: 20vh;
+  }
+  #centre {
+    background-color: rgb(196, 187, 175);
+    width: 100vw;
+    border: 1px solid gray;
+    height: 40vh;
+  }
+}
